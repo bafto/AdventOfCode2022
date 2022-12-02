@@ -1,6 +1,15 @@
 Binde "Duden/Ausgabe" ein.
 Binde "Duden/Eingabe" ein.
 Binde "Duden/Listen" ein.
+Binde "Duden/Sortierung" ein.
+
+[Helfer Funktionen]
+
+Die Funktion Letztes_Element mit dem Parameter liste vom Typ Zahlen Listen Referenz, gibt eine Zahl zurück, macht:
+	Gib liste an der Stelle (die Länge von liste) zurück.
+Und kann so benutzt werden:
+	"die Letzte Zahl in <liste>"
+
 
 Die Funktion Lies_Kalorien gibt eine Zahl zurück, macht:
 	Die Zahl Kalorien ist 0.
@@ -17,10 +26,11 @@ Die Zahlen Liste Elfen_Kalorien ist eine leere Zahlen Liste.
 Solange die Benutzereingabe nicht vorbei ist, mache:
 	Füge (die Kalorien, die der nächste Elf trägt) an Elfen_Kalorien an.
 
-Die Zahl max_kalorien ist 0.
-Für jede Zahl kalorien in Elfen_Kalorien, mache:
-	Wenn kalorien größer als max_kalorien ist, speichere kalorien in max_kalorien.
+Speichere Elfen_Kalorien sortiert in Elfen_Kalorien.
 
 Schreibe "Part 1: ".
-Schreibe max_kalorien auf eine Zeile.
+Schreibe (die Letzte Zahl in Elfen_Kalorien) auf eine Zeile.
 
+Schreibe "Part 2: ".
+Die Zahl i ist die Länge von Elfen_Kalorien.
+Schreibe (Elfen_Kalorien an der Stelle (i) plus Elfen_Kalorien an der Stelle (i minus 1) plus Elfen_Kalorien an der Stelle (i minus 2)) auf eine Zeile.
