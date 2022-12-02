@@ -16,8 +16,7 @@ Und kann so benutzt werden:
 	"die Kalorien, die der nächste Elf trägt"
 
 Die Zahlen Liste Elfen_Kalorien ist eine leere Zahlen Liste.
-Solange die Benutzereingabe nicht vorbei ist, mache:
-	Füge (die Kalorien, die der nächste Elf trägt) an Elfen_Kalorien an.
+Solange die Benutzereingabe nicht vorbei ist, Füge (die Kalorien, die der nächste Elf trägt) an Elfen_Kalorien an.
 
 Speichere Elfen_Kalorien sortiert in Elfen_Kalorien.
 
