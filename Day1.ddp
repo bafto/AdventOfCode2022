@@ -2,21 +2,14 @@ Binde "Duden/Ausgabe" ein.
 Binde "Duden/Eingabe" ein.
 Binde "Duden/Listen" ein.
 Binde "Duden/Sortierung" ein.
-
-[Helfer Funktionen]
-
-Die Funktion Letztes_Element mit dem Parameter liste vom Typ Zahlen Listen Referenz, gibt eine Zahl zurück, macht:
-	Gib liste an der Stelle (die Länge von liste) zurück.
-Und kann so benutzt werden:
-	"die Letzte Zahl in <liste>"
-
+Binde "Hilfsfunktionen" ein.
 
 Die Funktion Lies_Kalorien gibt eine Zahl zurück, macht:
 	Die Zahl Kalorien ist 0.
 	Der Text zeile ist die nächste Zeile.
 	Solange die Länge von zeile ungleich 0 und die Benutzereingabe nicht vorbei ist, mache:
 		Erhöhe Kalorien um zeile als Zahl.
-		Speichere (die nächste Zeile) in zeile.
+		Speichere die nächste Zeile in zeile.
 
 	Gib Kalorien zurück.
 Und kann so benutzt werden:
@@ -29,8 +22,7 @@ Solange die Benutzereingabe nicht vorbei ist, mache:
 Speichere Elfen_Kalorien sortiert in Elfen_Kalorien.
 
 Schreibe "Part 1: ".
-Schreibe (die Letzte Zahl in Elfen_Kalorien) auf eine Zeile.
+Schreibe (die letzte Zahl in Elfen_Kalorien) auf eine Zeile.
 
 Schreibe "Part 2: ".
-Die Zahl i ist die Länge von Elfen_Kalorien.
-Schreibe (Elfen_Kalorien an der Stelle (i) plus Elfen_Kalorien an der Stelle (i minus 1) plus Elfen_Kalorien an der Stelle (i minus 2)) auf eine Zeile.
+Schreibe (die Summe von (den letzten 3 Elementen in Elfen_Kalorien)) auf eine Zeile.

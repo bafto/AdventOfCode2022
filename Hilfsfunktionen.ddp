@@ -1,0 +1,32 @@
+Die Funktion Erstes_Element mit dem Parameter liste vom Typ Zahlen Listen Referenz, gibt eine Zahl zurück, macht:
+	Wenn die Länge von liste gleich 0 ist, gib 0 zurück.
+	Gib liste an der Stelle 1 zurück.
+Und kann so benutzt werden:
+	"die erste Zahl in <liste>"
+
+Die Funktion Letztes_Element mit dem Parameter liste vom Typ Zahlen Listen Referenz, gibt eine Zahl zurück, macht:
+	Wenn die Länge von liste gleich 0 ist, gib 0 zurück.
+	Gib liste an der Stelle (die Länge von liste) zurück.
+Und kann so benutzt werden:
+	"die letzte Zahl in <liste>"
+
+Die Funktion Vordere_N_Elemente mit den Parametern n und liste vom Typ Zahl und Zahlen Listen Referenz, gibt eine Zahlen Liste zurück, macht:
+	Wenn die Länge von liste gleich 0 ist, gib eine leere Zahlen Liste zurück.
+	Gib liste von 1 bis n zurück.
+Und kann so benutzt werden:
+	"die ersten <n> Elemente in <liste>" oder
+	"den ersten <n> Elementen in <liste>"
+
+Die Funktion Hintere_N_Elemente mit den Parametern n und liste vom Typ Zahl und Zahlen Listen Referenz, gibt eine Zahlen Liste zurück, macht:
+	Wenn die Länge von liste gleich 0 ist, gib eine leere Zahlen Liste zurück.
+	Gib liste von die Länge von liste minus n bis (die Länge von liste) zurück.
+Und kann so benutzt werden:
+	"die letzten <n> Elemente in <liste>" oder
+	"den letzten <n> Elementen in <liste>"
+
+Die Funktion Summe_von_Liste mit dem Parameter liste vom Typ Zahlen Liste, gibt eine Zahl zurück, macht:
+	Die Zahl Rückgabe ist 0.
+	Für jede Zahl i in liste, erhöhe Rückgabe um i.
+	Gib Rückgabe zurück.
+Und kann so benutzt werden:
+	"die Summe von <liste>"
