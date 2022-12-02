@@ -1,9 +1,8 @@
 Binde "Duden/Ausgabe" ein.
 Binde "Duden/Eingabe" ein.
+Binde "Duden/Listen" ein.
 
-Die Funktion Lies_Match_Score gibt eine Zahl zurück, macht:	
-	Wenn die Benutzereingabe zu Ende gewesen ist, gib 0 zurück.
-	Der Text zeile ist die nächste Zeile.
+Die Funktion Lies_Match_Score_Part1 mit dem Parameter zeile vom Typ Text, gibt eine Zahl zurück, macht:
 	Der Buchstabe a ist zeile an der Stelle 1.
 	Der Buchstabe b ist zeile an der Stelle 3.
 	Die Zahl Score ist b als Zahl minus 87. [ASCII Rechnung um den Wert des Buchstabens den wir wählen zu erhalten]
@@ -18,11 +17,47 @@ Die Funktion Lies_Match_Score gibt eine Zahl zurück, macht:
 
 	Gib Score plus 6 zurück. [wir gewinnen]
 Und kann so benutzt werden:
-	"den Score vom nächsten Match"
+	"den Score vom Match <zeile> (Part1)"
+
+Die Text Liste zeilen ist eine leere Text Liste.
+Solange die Benutzereingabe nicht vorbei ist, Füge (die nächste Zeile) an zeilen an.
 
 Die Zahl Score ist 0.
-Solange die Benutzereingabe nicht vorbei ist, mache:
-	Erhöhe Score um den Score vom nächsten Match.
+Für jeden Text zeile in zeilen, erhöhe Score um den Score vom Match zeile (Part1).
 
 Schreibe "Part 1: ".
+Schreibe Score auf eine Zeile.
+
+Die Funktion Lies_Match_Score_Part2 mit dem Parameter zeile vom Typ Text, gibt eine Zahl zurück, macht:
+	Der Buchstabe a ist zeile an der Stelle 1.
+	Der Buchstabe b ist zeile an der Stelle 3.
+
+	Wenn b gleich 'X' ist, dann:
+		Wenn a gleich 'A' ist, speichere 'Z' in b.
+		Wenn aber a gleich 'B' ist, speichere 'X' in b.
+		Sonst speichere 'Y' in b.
+	Wenn aber b gleich 'Y' ist, speichere (a als Zahl plus 23) als Buchstabe in b. [we need to draw]
+	Wenn aber b gleich 'Z' ist, dann:
+		Wenn a gleich 'A' ist, speichere 'Y' in b.
+		Wenn aber a gleich 'B' ist, speichere 'Z' in b.
+		Sonst speichere 'X' in b.
+
+	Die Zahl Score ist b als Zahl minus 87. [ASCII Rechnung um den Wert des Buchstabens den wir wählen zu erhalten]
+
+	Wenn a als Zahl gleich b als Zahl minus 23 ist, gib Score plus 3 zurück. [Unentschieden]
+
+	[Gegner gewinnt]
+	Wenn b gleich 'X' und a gleich 'B' oder
+		b gleich 'Y' und a gleich 'C' oder
+		b gleich 'Z' und a gleich 'A' ist, 
+		gib Score zurück.
+
+	Gib Score plus 6 zurück. [wir gewinnen]
+Und kann so benutzt werden:
+	"den Score vom Match <zeile> (Part2)"
+
+Score ist 0.
+Für jeden Text zeile in zeilen, erhöhe Score um den Score vom Match zeile (Part2).
+
+Schreibe "Part 2: ".
 Schreibe Score auf eine Zeile.
