@@ -1,0 +1,28 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+
+Die Funktion Lies_Match_Score gibt eine Zahl zurück, macht:	
+	Wenn die Benutzereingabe zu Ende gewesen ist, gib 0 zurück.
+	Der Text zeile ist die nächste Zeile.
+	Der Buchstabe a ist zeile an der Stelle 1.
+	Der Buchstabe b ist zeile an der Stelle 3.
+	Die Zahl Score ist b als Zahl minus 87. [ASCII Rechnung um den Wert des Buchstabens den wir wählen zu erhalten]
+
+	Wenn a als Zahl gleich b als Zahl minus 23 ist, gib Score plus 3 zurück. [Unentschieden]
+
+	[Gegner gewinnt]
+	Wenn b gleich 'X' und a gleich 'B' oder
+		b gleich 'Y' und a gleich 'C' oder
+		b gleich 'Z' und a gleich 'A' ist, 
+		gib Score zurück.
+
+	Gib Score plus 6 zurück. [wir gewinnen]
+Und kann so benutzt werden:
+	"den Score vom nächsten Match"
+
+Die Zahl Score ist 0.
+Solange die Benutzereingabe nicht vorbei ist, mache:
+	Erhöhe Score um den Score vom nächsten Match.
+
+Schreibe "Part 1: ".
+Schreibe Score auf eine Zeile.
