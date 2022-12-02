@@ -2,9 +2,7 @@ Binde "Duden/Ausgabe" ein.
 Binde "Duden/Eingabe" ein.
 Binde "Duden/Listen" ein.
 
-Die Funktion Lies_Match_Score_Part1 mit dem Parameter zeile vom Typ Text, gibt eine Zahl zurück, macht:
-	Der Buchstabe a ist zeile an der Stelle 1.
-	Der Buchstabe b ist zeile an der Stelle 3.
+Die Funktion Score_aus_Buchstaben mit den Parametern a und b vom Typ Buchstabe und Buchstabe, gibt eine Zahl zurück, macht:
 	Die Zahl Score ist b als Zahl minus 87. [ASCII Rechnung um den Wert des Buchstabens den wir wählen zu erhalten]
 
 	Wenn a als Zahl gleich b als Zahl minus 23 ist, gib Score plus 3 zurück. [Unentschieden]
@@ -16,6 +14,13 @@ Die Funktion Lies_Match_Score_Part1 mit dem Parameter zeile vom Typ Text, gibt e
 		gib Score zurück.
 
 	Gib Score plus 6 zurück. [wir gewinnen]
+Und kann so benutzt werden:
+	"den Score aus dem Match <a> vs <b>"
+
+Die Funktion Lies_Match_Score_Part1 mit dem Parameter zeile vom Typ Text, gibt eine Zahl zurück, macht:
+	Der Buchstabe a ist zeile an der Stelle 1.
+	Der Buchstabe b ist zeile an der Stelle 3.
+	Gib den Score aus dem Match a vs b zurück.
 Und kann so benutzt werden:
 	"den Score vom Match <zeile> (Part1)"
 
@@ -42,17 +47,7 @@ Die Funktion Lies_Match_Score_Part2 mit dem Parameter zeile vom Typ Text, gibt e
 		Wenn aber a gleich 'B' ist, speichere 'Z' in b.
 		Sonst speichere 'X' in b.
 
-	Die Zahl Score ist b als Zahl minus 87. [ASCII Rechnung um den Wert des Buchstabens den wir wählen zu erhalten]
-
-	Wenn a als Zahl gleich b als Zahl minus 23 ist, gib Score plus 3 zurück. [Unentschieden]
-
-	[Gegner gewinnt]
-	Wenn b gleich 'X' und a gleich 'B' oder
-		b gleich 'Y' und a gleich 'C' oder
-		b gleich 'Z' und a gleich 'A' ist, 
-		gib Score zurück.
-
-	Gib Score plus 6 zurück. [wir gewinnen]
+	Gib den Score aus dem Match a vs b zurück.
 Und kann so benutzt werden:
 	"den Score vom Match <zeile> (Part2)"
 
