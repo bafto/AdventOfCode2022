@@ -1,0 +1,26 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Listen" ein.
+
+Die Funktion Lies_Kalorien gibt eine Zahl zurück, macht:
+	Die Zahl Kalorien ist 0.
+	Der Text zeile ist die nächste Zeile.
+	Solange die Länge von zeile ungleich 0 und die Benutzereingabe nicht vorbei ist, mache:
+		Erhöhe Kalorien um zeile als Zahl.
+		Speichere (die nächste Zeile) in zeile.
+
+	Gib Kalorien zurück.
+Und kann so benutzt werden:
+	"die Kalorien, die der nächste Elf trägt"
+
+Die Zahlen Liste Elfen_Kalorien ist eine leere Zahlen Liste.
+Solange die Benutzereingabe nicht vorbei ist, mache:
+	Füge (die Kalorien, die der nächste Elf trägt) an Elfen_Kalorien an.
+
+Die Zahl max_kalorien ist 0.
+Für jede Zahl kalorien in Elfen_Kalorien, mache:
+	Wenn kalorien größer als max_kalorien ist, speichere kalorien in max_kalorien.
+
+Schreibe "Part 1: ".
+Schreibe max_kalorien auf eine Zeile.
+
