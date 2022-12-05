@@ -1,0 +1,56 @@
+Binde "Duden/Ausgabe" ein.
+Binde "Duden/Eingabe" ein.
+Binde "Duden/Listen" ein.
+Binde "Duden/Texte" ein.
+Binde "Hilfsfunktionen" ein.
+
+Die Funktion Erste_Hälfte mit dem Parameter text vom Typ Text, gibt einen Text zurück, macht:
+	Gib text von 1 bis ((die Länge von text durch 2) als Zahl) zurück.
+Und kann so benutzt werden:
+	"die erste Hälfte von <text>"
+
+Die Funktion Zweite_Hälfte mit dem Parameter text vom Typ Text, gibt einen Text zurück, macht:
+	Gib text von ((die Länge von text durch 2 plus 1) als Zahl) bis (die Länge von text) zurück.
+Und kann so benutzt werden:
+	"die zweite Hälfte von <text>"
+
+Die Funktion Gemeinsamer_Buchstabe mit dem Parameter tl vom Typ Text Liste, gibt einen Buchstaben zurück, macht:
+	Wenn die Länge von tl kleiner als, oder 1 ist, gib 0 als Buchstabe zurück.
+	Für jeden Buchstaben b in tl an der Stelle 1, mache:
+		Der Boolean hat_b ist wahr.
+		Für jeden Text t in tl von 2 bis (die Länge von tl), mache:
+			Wenn nicht t b enthält ist, speichere falsch in hat_b.
+		Wenn hat_b ist, gib b zurück.
+
+	Gib 0 als Buchstabe zurück. [unerreichbar]
+Und kann so benutzt werden:
+	"dem gemeinsamen Buchstaben von <tl>"
+
+Die Funktion Prio_Buchstabe mit dem Parameter b vom Typ Buchstabe, gibt eine Zahl zurück, macht:
+	Wenn b ein kleiner Buchstabe ist, gib b als Zahl minus 96 zurück.
+	[Sonst] Gib b als Zahl minus 64 plus 26 zurück.
+Und kann so benutzt werden:
+	"die Priorität von <b>"
+
+Die Funktion Priorität mit dem Parameter zeile vom Typ Text, gibt eine Zahl zurück, macht:
+	Der Text erste_Hälfte ist die erste Hälfte von zeile.
+	Der Text zweite_Hälfte ist die zweite Hälfte von zeile.
+	Gib die Priorität von (dem gemeinsamen Buchstaben von (einer Liste, die aus erste_Hälfte, zweite_Hälfte besteht)) zurück.
+Und kann so benutzt werden:
+	"die Priorität von <zeile>"
+
+Die Text Liste zeilen ist eine leere Text Liste.
+Solange die Benutzereingabe nicht vorbei ist, Füge (die nächste Zeile) an zeilen an.
+
+Die Zahlen Liste Prioritäten ist eine leere Zahlen Liste.
+Für jeden Text zeile in zeilen, Füge (die Priorität von zeile) an Prioritäten an.
+
+Schreibe "Part 1: ".
+Schreibe (die Summe von Prioritäten) auf eine Zeile.
+
+Prioritäten ist eine leere Zahlen Liste.
+Für jede Zahl i von 1 bis die Länge von zeilen mit Schrittgröße 3, mache:
+	Füge (die Priorität von (dem gemeinsamen Buchstaben von (zeilen von i bis (i plus 2)))) an Prioritäten an.
+
+Schreibe "Part 2: ".
+Schreibe (die Summe von Prioritäten) auf eine Zeile.
