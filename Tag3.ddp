@@ -19,7 +19,7 @@ Die Funktion Gemeinsamer_Buchstabe mit dem Parameter tl vom Typ Text Liste, gibt
 	Für jeden Buchstaben b in tl an der Stelle 1, mache:
 		Der Boolean hat_b ist wahr.
 		Für jeden Text t in tl von 2 bis (die Länge von tl), mache:
-			Wenn nicht t b enthält ist, speichere falsch in hat_b.
+			Wenn nicht b in t enthalten ist, speichere falsch in hat_b.
 		Wenn hat_b ist, gib b zurück.
 
 	Gib 0 als Buchstabe zurück. [unerreichbar]
